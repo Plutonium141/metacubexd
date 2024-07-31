@@ -97,6 +97,7 @@ export default {
   loadbalance: 'Loadbalance',
   fallback: 'Fallback',
   relay: 'Relay',
+  pass: 'pass',
   active: 'Active',
   closed: 'Closed',
   sort: 'Sort',

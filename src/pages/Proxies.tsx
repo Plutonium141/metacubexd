@@ -211,19 +211,19 @@ export default () => {
                     <div class="text-sm text-slate-500">
                       {(() => {
                         switch (proxyGroup.type) {
-                          case 'selector':
+                          case 'Selector':
                             return t('selector');
-                          case 'direct':
+                          case 'Direct':
                             return t('direct');
-                          case 'urltest':
+                          case 'Urltest':
                             return t('urltest');
-                          case 'reject':
+                          case 'Reject':
                             return t('reject');
-                          case 'loadbalance':
+                          case 'Loadbalance':
                             return t('loadbalance');
-                          case 'fallback':
+                          case 'Fallback':
                             return t('fallback');
-                          case 'relay':
+                          case 'Relay':
                             return t('relay');
                           default:
                             return proxyGroup.type;
@@ -232,7 +232,7 @@ export default () => {
                       {' '}
                       {proxyGroup.now?.length > 0 && ` > ${proxyGroup.now}`}
                     </div>
-                      
+
                     <Show when={!collapsedMap()[proxyGroup.name]}>
                       <ProxyNodePreview
                         proxyNameList={sortedProxyNames()}

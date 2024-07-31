@@ -8,12 +8,40 @@ export const formatProxyType = (type = '') => {
     return t.replace('shadowsocks', 'ss') // for both ss and ssr
   }
 
-  if (t === 'hysteria') {
-    return 'hy'
+  if (t.includes('hysteria')) {
+    return t.replace('hysteria', 'hy')
   }
 
   if (t === 'wireguard') {
     return 'wg'
+  }
+
+  if (t === 'selector') {
+    return t('selector')
+  }
+
+  if (t === 'direct') {
+    return t('direct')
+  }
+
+  if (t === 'urltest') {
+    return t('urltest')
+  }
+
+  if (t === 'reject') {
+    return t('reject')
+  }
+
+  if (t === 'loadbalance') {
+    return t('loadbalance')
+  }
+
+  if (t === 'fallback') {
+    return t('fallback')
+  }
+
+  if (t === 'relay') {
+    return t('relay')
   }
 
   return t

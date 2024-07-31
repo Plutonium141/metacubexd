@@ -99,6 +99,7 @@ export default {
   loadbalance: '负载均衡',
   fallback: '故障转移',
   relay: '链式代理',
+  pass: '继续匹配',
   active: '活动',
   closed: '已关闭',
   sort: '排序',
