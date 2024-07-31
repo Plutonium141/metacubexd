@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.144.1](https://github.com/Plutonium141/metacubexd/compare/v1.144.0...v1.144.1) (2024-07-31)
+
+
+### Bug Fixes
+
+* i18n ([4fc5beb](https://github.com/Plutonium141/metacubexd/commit/4fc5beb21d956ea4f69819aa5a4faf8b8838b3d1))
+
 ## [1.144.0](https://github.com/Plutonium141/metacubexd/compare/v1.143.5...v1.144.0) (2024-07-31)
 
 
