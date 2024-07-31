@@ -209,8 +209,28 @@ export default () => {
                     </div>
 
                     <div class="text-sm text-slate-500">
-                      {proxyGroup.type}{' '}
-                      {proxyGroup.now?.length > 0 && ` :: ${proxyGroup.now}`}
+                      {(() => {
+                        switch (proxyGroup.type) {
+                          case 'selector':
+                            return t('selector');
+                          case 'direct':
+                            return t('direct');
+                          case 'urltest':
+                            return t('urltest');
+                          case 'reject':
+                            return t('reject');
+                          case 'loadbalance':
+                            return t('loadbalance');
+                          case 'fallback':
+                            return t('fallback');
+                          case 'relay':
+                            return t('relay');
+                          default:
+                            return proxyGroup.type;
+                        }
+                      })()}
+                      {' '}
+                      {proxyGroup.now?.length > 0 && ` > ${proxyGroup.now}`}
                     </div>
 
                     <Show when={!collapsedMap()[proxyGroup.name]}>
