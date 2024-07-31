@@ -1,5 +1,6 @@
 import { PROXIES_ORDERING_TYPE } from '~/constants'
 import { latencyQualityMap, useProxies } from '~/signals'
+import { useI18n } from '~/i18n'
 
 export const formatProxyType = (type = '') => {
   const t = type.toLowerCase()
