@@ -232,7 +232,7 @@ export default () => {
                       {' '}
                       {proxyGroup.now?.length > 0 && ` > ${proxyGroup.now}`}
                     </div>
-
+                      
                     <Show when={!collapsedMap()[proxyGroup.name]}>
                       <ProxyNodePreview
                         proxyNameList={sortedProxyNames()}
