@@ -4,7 +4,7 @@ import { useI18n } from '~/i18n'
 
 export const formatProxyType = (type = '') => {
   const t = type.toLowerCase()
-
+  const [lang] = useI18n()
   if (t.includes('shadowsocks')) {
     return t.replace('shadowsocks', 'ss') // for both ss and ssr
   }
@@ -18,31 +18,31 @@ export const formatProxyType = (type = '') => {
   }
 
   if (t === 'selector') {
-    return t('selector')
+    return lang('selector')
   }
 
   if (t === 'direct') {
-    return t('direct')
+    return lang('direct')
   }
 
   if (t === 'urltest') {
-    return t('urltest')
+    return lang('urltest')
   }
 
   if (t === 'reject') {
-    return t('reject')
+    return lang('reject')
   }
 
   if (t === 'loadbalance') {
-    return t('loadbalance')
+    return lang('loadbalance')
   }
 
   if (t === 'fallback') {
-    return t('fallback')
+    return lang('fallback')
   }
 
   if (t === 'relay') {
-    return t('relay')
+    return lang('relay')
   }
 
   return t
